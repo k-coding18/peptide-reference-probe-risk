@@ -1,0 +1,134 @@
+schema_version = 1
+semantic_columns = ["sample_id", "sequence", "length", "y", "task"]
+
+[tasks.mftp_aap]
+semantic_sha256 = "afc3552975d989c9de8695a0934c0e8e4c6dcbe602c0d37807b514ed27972815"
+n = 2500
+positives = 30
+negatives = 2470
+
+[tasks.mftp_abp]
+semantic_sha256 = "1d7ac7ec008076a16f14a05530330477e6fb541201cb5b7fd1139cc81dcc8e71"
+n = 2500
+positives = 551
+negatives = 1949
+
+[tasks.mftp_acp]
+semantic_sha256 = "45fa42f084fcddd5916d343d6b27a806ebd91759c30a028d716d10d4635f507b"
+n = 2500
+positives = 237
+negatives = 2263
+
+[tasks.mftp_acvp]
+semantic_sha256 = "bf81dbeee1570ec7c23efc1dc62d34d7276711803ec3a453b0442e5214cfb456"
+n = 2500
+positives = 31
+negatives = 2469
+
+[tasks.mftp_adp]
+semantic_sha256 = "1fada9d3ce27e6b1e6ac80b522dfb0e8b7bc663fcad774b8bd23cd4771c8a6aa"
+n = 2500
+positives = 115
+negatives = 2385
+
+[tasks.mftp_aep]
+semantic_sha256 = "9649a1ed40c2594a1db1f2d9f2120daf99ea94c7238a516f73c11d4a05abbcc8"
+n = 2500
+positives = 25
+negatives = 2475
+
+[tasks.mftp_afp]
+semantic_sha256 = "6414883b0a0f52ae7ccdb51a8b317c38fee879b42c6e80819db5612bf0f794f4"
+n = 2500
+positives = 521
+negatives = 1979
+
+[tasks.mftp_ahivp]
+semantic_sha256 = "ba4d5e61dc84955217d7a6bdfe779d4c9b634a64e81d420db0195a4d21c9d6f2"
+n = 2500
+positives = 25
+negatives = 2475
+
+[tasks.mftp_ahp]
+semantic_sha256 = "9a74c9c133802eb18538fd18586f8a6aca049016fc7ba0c3fea7f697fdfe4b10"
+n = 2500
+positives = 213
+negatives = 2287
+
+[tasks.mftp_aip]
+semantic_sha256 = "e5dbc31d74cac23e007623efe1a34bbb935b411a3dd6b17ec97f1d506dff5808"
+n = 2500
+positives = 461
+negatives = 2039
+
+[tasks.mftp_amrsap]
+semantic_sha256 = "3f30c943b403028ea99c1b8b018cccdc8db1ae7217ae32319bffab75bb0f5658"
+n = 2500
+positives = 39
+negatives = 2461
+
+[tasks.mftp_app]
+semantic_sha256 = "debc931381f88af660d76bc2b9758814d0eeab3ff2c41cd90ae9af5a7d620273"
+n = 2500
+positives = 71
+negatives = 2429
+
+[tasks.mftp_atp]
+semantic_sha256 = "2de0ae4d314360c06ddd173d400fbb5b14f27d2b452bd12116a6c5bd2207c28b"
+n = 2500
+positives = 55
+negatives = 2445
+
+[tasks.mftp_avp]
+semantic_sha256 = "7302c6a35c2652194dc5fd53868aa2444b28872ded2c713e71e0de101161c7c7"
+n = 2500
+positives = 164
+negatives = 2336
+
+[tasks.mftp_bbp]
+semantic_sha256 = "f016fd3a389407a40b2e3f1d879f42f257099db19792552bd40bcdee27090ee2"
+n = 2500
+positives = 27
+negatives = 2473
+
+[tasks.mftp_bip]
+semantic_sha256 = "a389fcde4a78a5156b9f2727bebcee8bc7b10f353d853f8cddca9d7150baccf5"
+n = 2500
+positives = 76
+negatives = 2424
+
+[tasks.mftp_cpp]
+semantic_sha256 = "b67339308c253cc0c5d6511e9c5ac315ced49dc2b8a387be72e51ecfbd17f1e4"
+n = 2500
+positives = 104
+negatives = 2396
+
+[tasks.mftp_dppip]
+semantic_sha256 = "77d5022ddd6b287a8cc0113ad8968c2ff2cf57ee1fc07e9458bd7b183a38c1a8"
+n = 2500
+positives = 70
+negatives = 2430
+
+[tasks.mftp_qsp]
+semantic_sha256 = "46a0aba511c1c1698084122aa7889f22f26fbce50775f4db9b6ff6e766c3738c"
+n = 2500
+positives = 49
+negatives = 2451
+
+[tasks.mftp_sbp]
+semantic_sha256 = "30e3d3a529c5e3d33720d60d738172120726cb07fb9152688bc11f1ed86ff31a"
+n = 2500
+positives = 25
+negatives = 2475
+
+[tasks.mftp_thp]
+semantic_sha256 = "5a100a943f4ec734c3d6c2f013b978a8c35b3541af37da62b3adf094beb4231e"
+n = 2500
+positives = 146
+negatives = 2354
+
+[tasks.peptidebert_hemolysis]
+semantic_sha256 = "aa4b76861ae2aa2f88f33e545ef81822dfa5664ca2234660752867c2da6f26ce"
+n = 2500
+positives = 525
+negatives = 1975

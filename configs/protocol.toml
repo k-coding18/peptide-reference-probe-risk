@@ -1,0 +1,57 @@
+schema_version = 1
+
+[task_construction]
+task_count = 22
+sampling_seed = 20260519
+
+[fold_evaluation]
+fold_count = 5
+seeds = [42, 123, 2026]
+fixed_threshold = 0.5
+high_loss_fraction = 0.20
+top_risk_fraction = 0.20
+
+[model]
+identifier = "facebook/esm2_t6_8M_UR50D"
+revision = "c731040fcd8d73dceaa04b0a8e6329b345b0f5df"
+maximum_sequence_length = 128
+embedding_batch_size = 32
+
+[reference_probes]
+solver = "liblinear"
+class_weight = "balanced"
+maximum_iterations = 3000
+regularization_values = [0.1, 1.0, 10.0]
+
+[target_adaptation]
+target_models = ["vanilla_lora", "balanced_lora", "focal_lora"]
+primary_target_model = "focal_lora"
+epochs = 4
+batch_size = 16
+learning_rate = 0.0002
+weight_decay = 0.01
+lora_rank = 8
+lora_alpha = 16
+lora_dropout = 0.05
+lora_target_modules = ["query", "key", "value"]
+focal_gamma = 2.0
+
+[distance_controls]
+k_values = [1, 5, 20]
+
+[similarity_holdout]
+enabled = true
+alignment = "global_match_1_mismatch_0_gap_0_over_max_length"
+threshold = 0.80
+test_fraction = 0.20
+component_assignment_trials = 300
+repeats = 1
+model_seeds = [42]
+minimum_train_positives = 10
+minimum_test_positives = 5
+
+[estimation]
+task_resamples = 5000
+resampling_seed = 20260613
+calibration_bins = 10
+coverage_levels = [1.0, 0.9, 0.8, 0.7, 0.6]
